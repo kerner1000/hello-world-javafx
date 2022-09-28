@@ -1,4 +1,4 @@
-package com.github.kerner1000;
+package org.example;
 
 import javafx.application.Application;
 import javafx.geometry.Pos;
@@ -20,8 +20,7 @@ public class SimpleApplication extends Application {
     private static Scene buildScene() {
         Label helloWorldLabel = new Label("Hello world!");
         helloWorldLabel.setAlignment(Pos.CENTER);
-        Scene primaryScene = new Scene(helloWorldLabel);
-        return primaryScene;
+        return new Scene(helloWorldLabel);
     }
 
     public static void main(String[] args) {
