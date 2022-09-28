@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.geometry.Insets?>
+<BorderPane prefHeight="150.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
+            xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainViewController">
+    <padding>
+        <Insets top="4" right="4" bottom="4" left="4"/>
+    </padding>
+    <top>
+
+    </top>
+    <center>
+        <VBox spacing="10" alignment="CENTER">
+            <HBox spacing="4" alignment="CENTER">
+                <Label text="Hello, what is your name?"/>
+                <TextField fx:id="inputYourName" promptText="Input your Name"/>
+            </HBox>
+            <Button fx:id="buttonGo" onAction="#sayHelloWorld" text="Greetings"/>
+            <Label fx:id="helloWorldLabel"/>
+        </VBox>
+    </center>
+    <bottom>
+
+    </bottom>
+</BorderPane>
