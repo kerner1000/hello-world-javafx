@@ -10,7 +10,6 @@
         <Insets top="4" right="4" bottom="4" left="4"/>
     </padding>
     <top>
-
     </top>
     <center>
         <VBox spacing="10" alignment="CENTER">
@@ -23,6 +22,7 @@
         </VBox>
     </center>
     <bottom>
-
+        <fx:include fx:id="anotherComponent"
+                    source="AnotherComponent.fxml"/>
     </bottom>
 </BorderPane>
