@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ProgressBar?>
+<?import javafx.scene.layout.*?>
+<GridPane xmlns="http://javafx.com/javafx"
+          xmlns:fx="http://javafx.com/fxml"
+          fx:controller="org.example.ProgressAndStatusGridComponentController"
+          hgap="4" vgap="4">
+    <padding>
+        <Insets top="4" right="4" bottom="4" left="4"/>
+    </padding>
+    <fx:define>
+        <ColumnConstraints fx:id="colConstraints2" percentWidth="100"/>
+    </fx:define>
+    <columnConstraints>
+        <fx:reference source="colConstraints2"/>
+        <fx:reference source="colConstraints2"/>
+    </columnConstraints>
+    <ProgressBar fx:id="progressBar" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
+    <HBox fx:id="progressStatusBox" alignment="CENTER" spacing="4" GridPane.columnIndex="1" GridPane.rowIndex="0">
+        <padding>
+            <Insets top="4" right="4" bottom="4" left="4"/>
+        </padding>
+        <Label fx:id="progressLabel"/>
+    </HBox>
+</GridPane>

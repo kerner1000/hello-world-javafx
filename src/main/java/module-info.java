@@ -3,4 +3,5 @@ module hello.world.javafx {
     requires javafx.controls;
     requires javafx.fxml;
     exports org.example;
+    opens org.example;
 }

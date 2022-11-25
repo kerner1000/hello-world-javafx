@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
-
 <?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.layout.BorderPane?>
 <BorderPane prefHeight="150.0" prefWidth="350.0" xmlns="http://javafx.com/javafx/17.0.2-ea"
             xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.MainViewController">
     <padding>
@@ -12,17 +12,17 @@
     <top>
     </top>
     <center>
-        <VBox spacing="10" alignment="CENTER">
-            <HBox spacing="4" alignment="CENTER">
-                <Label text="Hello, what is your name?"/>
-                <TextField fx:id="inputYourName" promptText="Input your Name"/>
-            </HBox>
-            <Button fx:id="buttonGo" onAction="#sayHelloWorld" text="Greetings"/>
-            <Label fx:id="helloWorldLabel"/>
-        </VBox>
+        <TabPane>
+            <Tab text="tab1" closable="false">
+                <fx:include fx:id="tab1" source="Tab1View.fxml"/>
+            </Tab>
+            <Tab text="tab2" closable="false">
+                <fx:include fx:id="tab2" source="Tab2View.fxml"/>
+            </Tab>
+        </TabPane>
     </center>
     <bottom>
-        <fx:include fx:id="anotherComponent"
-                    source="AnotherComponent.fxml"/>
+        <fx:include fx:id="progressAndStatusGrid"
+                    source="ProgressAndStatusGridComponent.fxml"/>
     </bottom>
 </BorderPane>
